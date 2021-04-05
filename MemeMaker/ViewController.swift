@@ -17,10 +17,51 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomCaptionLabel: UILabel!
     
     @IBAction func changeLabel(_ sender: UISegmentedControl) {
+        changeCaption()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        topSegmentedControl.removeAllSegments()
+        bottomSegmentedControl.removeAllSegments()
+        
+        for choice in topChoices {
+            topSegmentedControl.insertSegment(withTitle: choice.emoji, at: topChoices.count, animated: false)
+        }
+        
+        for choice in bottomChoices {
+            bottomSegmentedControl.insertSegment(withTitle: choice.emoji, at: bottomChoices.count, animated: false)
+        }
+        
+        topSegmentedControl.selectedSegmentIndex = 0
+        bottomSegmentedControl.selectedSegmentIndex = 0
+        
+        changeCaption()
+    }
+    
+    func changeCaption() {
+        switch topSegmentedControl.selectedSegmentIndex {
+            case 0:
+                topCaptionLabel.text = topChoices[0].caption
+            case 1:
+                topCaptionLabel.text = topChoices[1].caption
+            case 2:
+                topCaptionLabel.text = topChoices[2].caption
+            default:
+                break
+        }
+        
+        switch bottomSegmentedControl.selectedSegmentIndex {
+            case 0:
+                bottomCaptionLabel.text = bottomChoices[0].caption
+            case 1:
+                bottomCaptionLabel.text = bottomChoices[1].caption
+            case 2:
+                bottomCaptionLabel.text = bottomChoices[2].caption
+            default:
+                break
+        }
     }
 
 
