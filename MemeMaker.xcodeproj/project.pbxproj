@@ -13,6 +13,7 @@
 		35E29F32261B086F00E8C176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E29F30261B086F00E8C176 /* Main.storyboard */; };
 		35E29F34261B087000E8C176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E29F33261B087000E8C176 /* Assets.xcassets */; };
 		35E29F37261B087000E8C176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E29F35261B087000E8C176 /* LaunchScreen.storyboard */; };
+		35E29F40261B11E200E8C176 /* CaptionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E29F3F261B11E200E8C176 /* CaptionOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		35E29F33261B087000E8C176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35E29F36261B087000E8C176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35E29F38261B087000E8C176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E29F3F261B11E200E8C176 /* CaptionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				35E29F2A261B086F00E8C176 /* AppDelegate.swift */,
 				35E29F2C261B086F00E8C176 /* SceneDelegate.swift */,
 				35E29F2E261B086F00E8C176 /* ViewController.swift */,
+				35E29F3F261B11E200E8C176 /* CaptionOption.swift */,
 				35E29F30261B086F00E8C176 /* Main.storyboard */,
 				35E29F33261B087000E8C176 /* Assets.xcassets */,
 				35E29F35261B087000E8C176 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35E29F2F261B086F00E8C176 /* ViewController.swift in Sources */,
+				35E29F40261B11E200E8C176 /* CaptionOption.swift in Sources */,
 				35E29F2B261B086F00E8C176 /* AppDelegate.swift in Sources */,
 				35E29F2D261B086F00E8C176 /* SceneDelegate.swift in Sources */,
 			);
